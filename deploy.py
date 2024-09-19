@@ -20,8 +20,8 @@ with open('style.css') as f:
 
 # Carregar o modelo e o scaler
 #modelo_dsa = joblib.load('dsa_modelo_final.pkl')
-modelo_dsa = joblib.load('churn_clientes/dsa_modelo_final.pkl')
-scaler = joblib.load('churn_clientes/dsa_padronizador.pkl')
+modelo_dsa = joblib.load('dsa_modelo_final.pkl')
+scaler = joblib.load('dsa_padronizador.pkl')
 
 # Função para pré-processar os dados de entrada
 # As colunas devem ser exatamente as mesmas usadas durante o treinamento
