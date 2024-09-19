@@ -1,4 +1,3 @@
-setuptools
 distutils
 numpy==1.25.0
 joblib==1.2.0
