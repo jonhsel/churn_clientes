@@ -20,8 +20,8 @@ with open('style.css') as f:
 
 # Carregar o modelo e o scaler
 #modelo_dsa = joblib.load('dsa_modelo_final.pkl')
-modelo_dsa = joblib.load('https://github.com/jonhsel/churn_clientes/blob/360c6bec6cf9190bae5a0be83469b3f59029161f/dsa_modelo_final.pkl')
-scaler = joblib.load('https://github.com/jonhsel/churn_clientes/blob/360c6bec6cf9190bae5a0be83469b3f59029161f/dsa_padronizador.pkl')
+modelo_dsa = joblib.load('churn_clientes/dsa_modelo_final.pkl')
+scaler = joblib.load('churn_clientes/dsa_padronizador.pkl')
 
 # Função para pré-processar os dados de entrada
 # As colunas devem ser exatamente as mesmas usadas durante o treinamento
