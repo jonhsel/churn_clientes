@@ -19,7 +19,7 @@ with open('style.css') as f:
 #################
 
 # Carregar o modelo e o scaler
-modelo_dsa = joblib.load('modelo_final.pkl')
+modelo_jonh = joblib.load('modelo_final.pkl')
 scaler = joblib.load('padronizador.pkl')
 
 # Função para pré-processar os dados de entrada
@@ -68,7 +68,7 @@ def preprocess_input(idade,
 
 # Função para fazer previsões
 def predict(data):
-    prediction = modelo_dsa.predict(data)
+    prediction = modelo_jonh.predict(data)
     return prediction
 
 # Interface do Streamlit
