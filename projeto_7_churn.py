@@ -11,7 +11,7 @@ Original file is located at
 ## Pacotes usados no projeto
 """
 
-!pip install -q -U watermark
+#!pip install -q -U watermark
 
 #import de bibliotecas
 
@@ -23,8 +23,8 @@ import pandas as pd
 import numpy as np
 
 #visualização de dados e geração de gráficos
-import matplotlib.pyplot as plt
-import seaborn as sns
+#import matplotlib.pyplot as plt
+#import seaborn as sns
 
 #biblioteca para construção de modelos de machine learning
 import sklearn
@@ -35,13 +35,13 @@ from sklearn.metrics import classification_report, accuracy_score
 
 #configurações básicas dos gráficos
 #para deixamos todos do mesmo tamanho e padrão
-sns.set(style="whitegrid")
-plt.rcParams['figure.figsize'] = [6,5]
+#sns.set(style="whitegrid")
+#plt.rcParams['figure.figsize'] = [6,5]
 
 """## Carregar os dados"""
 
 #carregando os dados
-df_churn = pd.read_csv('/content/drive/MyDrive/dataset.csv')
+df_churn = pd.read_csv('dataset.csv')
 
 #verificação do tipo de objeto
 type(df_churn)
@@ -87,7 +87,7 @@ def eda(dados):
             plt.show()
 
 #Realizando a EDA
-eda(df_churn)
+#eda(df_churn)
 
 """## Automatizar o processo de divisão em Dados de Treino e Teste"""
 
@@ -283,10 +283,10 @@ print(relatorio_classificacao_final)
 """Agora devemos realizar o dumping dos modelos"""
 
 #do Scaler
-joblib.dump(scaler, '/content/drive/MyDrive/padronizador_churn.pkl')
+joblib.dump(scaler, 'padronizador_churn.pkl')
 
 #do modelo
-joblib.dump(df_churn_final, '/content/drive/MyDrive/df_churn_final.pkl')
+joblib.dump(df_churn_final, 'df_churn_final.pkl')
 
 # Commented out IPython magic to ensure Python compatibility.
 # %watermark -v -m
