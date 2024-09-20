@@ -19,8 +19,8 @@ with open('style.css') as f:
 #################
 
 # Carregar o modelo e o scaler
-modelo_jonh = joblib.load('modelo_final.pkl')
-scaler = joblib.load('padronizador.pkl')
+modelo_jonh = joblib.load('df_churn_final.pkl')
+scaler = joblib.load('padronizador_churn.pkl')
 
 # Função para pré-processar os dados de entrada
 # As colunas devem ser exatamente as mesmas usadas durante o treinamento
