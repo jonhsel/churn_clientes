@@ -72,7 +72,7 @@ def predict(data):
     return prediction
 
 # Interface do Streamlit
-st.title("Previsão de Churn de Clientes em um modelo preditivo de Machine Learning com RandomForest")
+st.title("Jonh Selmo - Previsão de Churn de Clientes em um modelo preditivo de Machine Learning com RandomForest")
 
 # Criação de campos para entrada de dados
 idade = st.number_input('Idade', min_value = 18, max_value = 100, value = 30)
