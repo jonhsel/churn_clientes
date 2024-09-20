@@ -19,9 +19,8 @@ with open('style.css') as f:
 #################
 
 # Carregar o modelo e o scaler
-#modelo_dsa = joblib.load('dsa_modelo_final.pkl')
-modelo_dsa = joblib.load('dsa_modelo_final.pkl')
-scaler = joblib.load('dsa_padronizador.pkl')
+modelo_dsa = joblib.load('modelo_final.pkl')
+scaler = joblib.load('padronizador.pkl')
 
 # Função para pré-processar os dados de entrada
 # As colunas devem ser exatamente as mesmas usadas durante o treinamento
@@ -115,8 +114,7 @@ if st.button('Prever Churn'):
 
     st.write('Churn Previsto: ' , 'Sim' if prediction[0] == 1 else 'Não')
 
-    #st.write('Obrigado - Data Science Academy')
-
+   
 
 
 
